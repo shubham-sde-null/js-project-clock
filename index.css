@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#clockContainer {
+    background: url("./clock.png");
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    height: 40vw;
+    width: 40vw;
+    /* because of vw it became responsive so whenever I change the display size it will adjust with 40vw height and width  */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid rgb(2, 248, 108);
+    transform-origin: bottom;
+    /* I wrote transform-origin as bottom because I want to rotate my handle of clock from the bottom part  */
+}
+
+#hour {
+    width: 1%;
+    height: 19%;
+    top: 31.2%;
+    left: 49.5%;
+    opacity: 0.7;
+    /* display: none; */
+}
+
+#minute {
+    width: 1%;
+    height: 23%;
+    top: 27.6%;
+    left: 49.5%;
+    border: 2px solid red;
+    opacity: 0.4;
+    /* display: none; */
+}
+
+#second {
+    width: 1%;
+    height: 28%;
+    top: 22.6%;
+    left: 49.5%;
+    border: 2px solid rgb(56, 6, 255);
+    opacity: 0.3;
+    /* display: none; */
+}
+
+
+/* #symbol {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-color: rgb(0, 0, 0);
+    top: 290px;
+    left: 291px;
+    border-radius: 30px;
+} */
